@@ -1,0 +1,112 @@
+
+$bg-color: #2980b9;
+$text-color: #fff;
+
+
+
+body {
+  background-color: $bg-color;
+  margin: 0 auto;
+  color: $text-color;
+
+//animacijai:
+  -webkit-animation-name: keiciaFonoSpalva;
+          animation-name: keiciaFonoSpalva;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count:infinite;
+          animation-iteration-count:infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes keiciaFonoSpalva {
+    0% {background-color: $bg-color;}
+    50% {background-color: #004081;}
+    100% {background-color: $bg-color;}
+
+}
+
+/* Standard syntax */
+@keyframes keiciaFonoSpalva {
+  0% {background-color: $bg-color;}
+  50% {background-color: #004081;}
+  100% {background-color: $bg-color;}
+}
+
+.navbar-miego {
+  background-color: #095c95;
+
+    .navbar-brand {
+      color: $text-color;
+
+      &:hover {
+        color: $text-color;
+      }
+      &:focus {
+        color: $text-color;
+      }
+    }
+
+    .navbar-nav {
+
+
+      .nav-link {
+        color: $text-color;
+        &:hover {
+          color: $text-color;
+          text-decoration: underline;
+
+        }
+
+
+        }
+
+        .disabled {
+          color: rgba(0,0,0,.3);
+          &:hover {
+            color: rgba(0,0,0,.3) !important;
+            text-decoration: none;
+          }
+
+      }
+
+
+      .active {
+        color: $text-color !important;
+        text-decoration: underline;
+        .nav-link {
+          color: $text-color;
+        }
+      }
+    }
+
+
+    .navbar-toggler-icon {
+      border: 0px solid red;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+}
+
+
+#inputas {
+  // margin-top: 100px;
+  min-height: 600px;
+
+  .pavadinimas {
+    text-align: center;
+    padding-top: 100px;
+  }
+
+
+  
+
+
+}
+
+// .vertikalus-iscentravimas {
+//   position: absolute;
+//   top: 50%;
+//   transform: perspective(1px) translateY(-50%);
+//    -webkit-transform: perspective(1px) translateY(-50%);
+//    -ms-transform: perspective(1px) translateY(-50%);
+// }
