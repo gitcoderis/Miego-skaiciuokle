@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo|Berkshire+Swash&subset=latin-ext');
 
+$title-font: 'Baloo', cursive;
+$title-font2: 'Berkshire Swash', cursive;
 $bg-color: #2980b9;
 $text-color: #fff;
 
@@ -33,11 +36,25 @@ body {
   100% {background-color: $bg-color;}
 }
 
+
+h1 {
+  font-family: $title-font;
+}
+
+.title-dalis {
+  font-family: $title-font2 !important;
+}
+
+.f-45 {
+  font-size: 4em;
+}
+
 .navbar-miego {
   background-color: #095c95;
 
     .navbar-brand {
       color: $text-color;
+      font-family: $title-font;
 
       &:hover {
         color: $text-color;
@@ -98,7 +115,7 @@ body {
   }
 
 
-  
+
 
 
 }

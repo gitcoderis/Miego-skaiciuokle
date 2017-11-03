@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo|Berkshire+Swash&subset=latin-ext");
 body {
   background-color: #2980b9;
   margin: 0 auto;
@@ -25,10 +26,20 @@ body {
     background-color: #004081; }
   100% {
     background-color: #2980b9; } }
+h1 {
+  font-family: "Baloo", cursive; }
+
+.title-dalis {
+  font-family: "Berkshire Swash", cursive !important; }
+
+.f-45 {
+  font-size: 4em; }
+
 .navbar-miego {
   background-color: #095c95; }
   .navbar-miego .navbar-brand {
-    color: #fff; }
+    color: #fff;
+    font-family: "Baloo", cursive; }
     .navbar-miego .navbar-brand:hover {
       color: #fff; }
     .navbar-miego .navbar-brand:focus {
