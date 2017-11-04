@@ -77,15 +77,23 @@ h1 {
     #inputas .forma input {
       font-family: "Berkshire Swash", cursive;
       font-size: 2em;
-      -webkit-border-radius: 15px;
-      border-radius: 15px;
+      -webkit-border-radius: 9px;
+      border-radius: 9px;
       background-clip: padding-box;
       /* stops bg color from leaking outside the border: */
       border: 0px;
       -webkit-box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.2);
       -moz-box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.2);
       box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.2);
-      min-width: 300px;
+      min-width: 250px;
       text-align: center; }
+      #inputas .forma input:hover {
+        -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4); }
+    #inputas .forma button {
+      min-width: 200px;
+      min-height: 64px;
+      margin: 10px 0px 10px 10px; }
 
 /*# sourceMappingURL=miegas.css.map */
