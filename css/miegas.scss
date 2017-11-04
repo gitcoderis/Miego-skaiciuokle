@@ -7,6 +7,27 @@ $text-color: #fff;
 
 
 
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
+
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+
 body {
   background-color: $bg-color;
   margin: 0 auto;
@@ -46,7 +67,7 @@ h1 {
 }
 
 .f-45 {
-  font-size: 4em;
+  font-size: 3.6em;
 }
 
 .navbar-miego {
@@ -107,7 +128,7 @@ h1 {
 
 #inputas {
   // margin-top: 100px;
-  min-height: 600px;
+  min-height: 300px;
 
   .pavadinimas {
     text-align: center;
@@ -115,7 +136,23 @@ h1 {
   }
 
   .forma {
-    margin-top: 50px;
+    margin-top: 30px;
+
+    h3 {
+      font-size: 1.7em;
+      font-weight: 300;
+      margin-bottom: 15px;
+    }
+
+    input {
+      font-family: $title-font2;
+      font-size: 2em;
+      @include border-radius(15px);
+      border: 0px;
+      @include box-shadow(0px, 1px, 13px, rgba(0,0,0,.2));
+      min-width: 300px;
+      text-align: center;
+    }
   }
 
 

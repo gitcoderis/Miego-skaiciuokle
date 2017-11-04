@@ -33,7 +33,7 @@ h1 {
   font-family: "Berkshire Swash", cursive !important; }
 
 .f-45 {
-  font-size: 4em; }
+  font-size: 3.6em; }
 
 .navbar-miego {
   background-color: #095c95; }
@@ -64,11 +64,28 @@ h1 {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
 
 #inputas {
-  min-height: 600px; }
+  min-height: 300px; }
   #inputas .pavadinimas {
     text-align: center;
     padding-top: 100px; }
   #inputas .forma {
-    margin-top: 50px; }
+    margin-top: 30px; }
+    #inputas .forma h3 {
+      font-size: 1.7em;
+      font-weight: 300;
+      margin-bottom: 15px; }
+    #inputas .forma input {
+      font-family: "Berkshire Swash", cursive;
+      font-size: 2em;
+      -webkit-border-radius: 15px;
+      border-radius: 15px;
+      background-clip: padding-box;
+      /* stops bg color from leaking outside the border: */
+      border: 0px;
+      -webkit-box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.2);
+      min-width: 300px;
+      text-align: center; }
 
 /*# sourceMappingURL=miegas.css.map */
