@@ -230,24 +230,24 @@ h1 {
 
   -webkit-animation-name: zvaigzdute1;
           animation-name: zvaigzdute1;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
   -webkit-animation-iteration-count:infinite;
           animation-iteration-count:infinite;
 
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes zvaigzdute1 {
-  0% {opacity: 0.2;}
-  50% {opacity: 1;}
-  100% {opacity: 0.2;}
+  0% {opacity: 0.1;}
+  50% {opacity: .3;}
+  100% {opacity: 0.1;}
 }
 
 /* Standard syntax */
 @keyframes zvaigzdute1 {
-  0% {opacity: 0.2;}
-  50% {opacity: 1;}
-  100% {opacity: 0.2;}
+  0% {opacity: 0.1;}
+  50% {opacity: .3;}
+  100% {opacity: 0.1;}
 }
 
 
@@ -269,8 +269,8 @@ h1 {
   //animacijai:
     -webkit-animation-name: zvaigzdute;
             animation-name: zvaigzdute;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
+    -webkit-animation-duration: 8s;
+            animation-duration: 8s;
     -webkit-animation-iteration-count:infinite;
             animation-iteration-count:infinite;
 
@@ -280,6 +280,9 @@ h1 {
     0% {top:-10%;
     right: 0%;}
 
+    50% {top:90%;
+    right: 50%; opacity: 0;}
+
     100% {top:90%;
     right: 50%; opacity: 0;}
   }
@@ -288,6 +291,9 @@ h1 {
   @keyframes zvaigzdute {
     0% {top:-10%;
     right: 0%;}
+
+    25% {top:90%;
+    right: 50%; opacity: 0;}
 
     100% {top:90%;
     right: 50%; opacity: 0;}
