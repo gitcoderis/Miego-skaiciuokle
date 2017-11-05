@@ -36,7 +36,8 @@ h1 {
   font-size: 3.6em; }
 
 .navbar-miego {
-  background-color: #095c95; }
+  background-color: #095c95;
+  z-index: 99; }
   .navbar-miego .navbar-brand {
     color: #fff;
     font-family: "Baloo", cursive; }
@@ -69,12 +70,15 @@ h1 {
     text-align: center;
     padding-top: 100px; }
   #inputas .forma {
-    margin-top: 30px; }
+    margin-top: 30px;
+    /* Safari 4.0 - 8.0 */
+    /* Standard syntax */ }
     #inputas .forma h3 {
       font-size: 1.7em;
       font-weight: 300;
       margin-bottom: 15px; }
     #inputas .forma input {
+      z-index: 998;
       font-family: "Berkshire Swash", cursive;
       font-size: 2em;
       -webkit-border-radius: 9px;
@@ -92,8 +96,63 @@ h1 {
         -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4);
         box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.4); }
     #inputas .forma button {
+      z-index: 999;
       min-width: 200px;
       min-height: 64px;
-      margin: 10px 0px 10px 10px; }
+      margin: 10px 0px 10px 10px;
+      -webkit-animation-name: keiciaBtnSpalva;
+      animation-name: keiciaBtnSpalva;
+      -webkit-animation-duration: 10s;
+      animation-duration: 10s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite; }
+@-webkit-keyframes keiciaBtnSpalva {
+  0% {
+    background-color: #004081; }
+  50% {
+    background-color: #2980b9; }
+  100% {
+    background-color: #004081; } }
+@keyframes keiciaBtnSpalva {
+  0% {
+    background-color: #004081; }
+  50% {
+    background-color: #2980b9; }
+  100% {
+    background-color: #004081; } }
+.zvaigzdutes-konteineris .zvaigzdute {
+  position: absolute;
+  height: 4px;
+  width: 4px;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  z-index: 2;
+  -webkit-animation-name: zvaigzdute;
+  animation-name: zvaigzdute;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  /* Safari 4.0 - 8.0 */
+  /* Standard syntax */ }
+@-webkit-keyframes zvaigzdute {
+  0% {
+    top: -10%;
+    right: 0%; }
+  100% {
+    top: 90%;
+    right: 50%;
+    opacity: 0; } }
+@keyframes zvaigzdute {
+  0% {
+    top: -10%;
+    right: 0%; }
+  100% {
+    top: 90%;
+    right: 50%;
+    opacity: 0; } }
 
 /*# sourceMappingURL=miegas.css.map */
