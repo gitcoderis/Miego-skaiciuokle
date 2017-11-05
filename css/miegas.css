@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo|Berkshire+Swash&subset=latin-ext");
 body {
-  background-color: #2980b9;
+  background-color: #0C154C;
   margin: 0 auto;
   color: #fff;
   -webkit-animation-name: keiciaFonoSpalva;
@@ -13,19 +13,19 @@ body {
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes keiciaFonoSpalva {
   0% {
-    background-color: #2980b9; }
+    background-color: #0C154C; }
   50% {
     background-color: #004081; }
   100% {
-    background-color: #2980b9; } }
+    background-color: #0C154C; } }
 /* Standard syntax */
 @keyframes keiciaFonoSpalva {
   0% {
-    background-color: #2980b9; }
+    background-color: #0C154C; }
   50% {
     background-color: #004081; }
   100% {
-    background-color: #2980b9; } }
+    background-color: #0C154C; } }
 h1 {
   font-family: "Baloo", cursive; }
 
@@ -36,7 +36,7 @@ h1 {
   font-size: 3.6em; }
 
 .navbar-miego {
-  background-color: #095c95;
+  background-color: #00559A;
   z-index: 99; }
   .navbar-miego .navbar-brand {
     color: #fff;
@@ -108,19 +108,48 @@ h1 {
       animation-iteration-count: infinite; }
 @-webkit-keyframes keiciaBtnSpalva {
   0% {
-    background-color: #004081; }
+    background-color: #18A2C4; }
   50% {
-    background-color: #2980b9; }
+    background-color: #008E99; }
   100% {
-    background-color: #004081; } }
+    background-color: #18A2C4; } }
 @keyframes keiciaBtnSpalva {
   0% {
-    background-color: #004081; }
+    background-color: #18A2C4; }
   50% {
-    background-color: #2980b9; }
+    background-color: #008E99; }
   100% {
-    background-color: #004081; } }
-.zvaigzdutes-konteineris .zvaigzdute {
+    background-color: #18A2C4; } }
+.zvaigzdutes-konteineris {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  height: 2px;
+  width: 2px;
+  background-color: #fff;
+  -webkit-animation-name: zvaigzdute1;
+  animation-name: zvaigzdute1;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  /* Safari 4.0 - 8.0 */
+  /* Standard syntax */ }
+@-webkit-keyframes zvaigzdute1 {
+  0% {
+    opacity: 0.2; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.2; } }
+@keyframes zvaigzdute1 {
+  0% {
+    opacity: 0.2; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.2; } }
+.zvaigzdute {
   position: absolute;
   height: 4px;
   width: 4px;
