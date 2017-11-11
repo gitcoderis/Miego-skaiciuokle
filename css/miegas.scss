@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo|Berkshire+Swash&subset=latin-ext');
 
-$title-font: 'Baloo', cursive;
+$title-font: 'Berkshire Swash', cursive;
 $title-font2: 'Berkshire Swash', cursive;
 $bg-color: #0C154C;
 $text-color: #fff;
@@ -218,6 +218,11 @@ h1 {
 //   height: 100%;
 //   background-color: red;
 // }
+
+
+#rezultatas {
+  margin: 20px auto;
+}
 
 
 .zvaigzdutes-konteineris {

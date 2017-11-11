@@ -34,21 +34,65 @@ $(document).ready(function(){
     change: function(time){
       valandos = time.getHours();
       minutes = time.getMinutes();
-      var result = valandos+":"+minutes;
-      console.log(result);
+       $('#btn-skaiciuoti').removeClass('disabled');
+      // if(result<0) {
+      //   result = result+60;
+      //   console.log(result);
+      // }
+      // console.log(result);
     }
 });
 
+$('#btn-skaiciuoti').click(function(){
+  if($('#btn-skaiciuoti').hasClass('disabled')){
 
+    console.log('Mygtukas neaktyvus. Pasirinkite kitą laiką');
+  } else {
+    $('#rezultatas').empty();
+    kadaMiegoti();
+    $('#rezultatas').prepend("<p>Kad atsikeltumėte pailsėję norimu laiku, miegoti reikėtų eiti vienu iš šių laikų:</p>");
+
+    $('#btn-skaiciuoti').addClass('disabled');
+  }
+
+});
 
 
 
 });
 
 
-var arVeikiaDb = function(){
-  var inputoReiksme = document.getElementById('inputas').value;
+var kadaMiegoti = function(){
 
-  var result = valandos+":"+minutes;
-  console.log(result);
+  var result;
+  minutes-=15;
+  for (var i = 0; i < 6; i++) {
+    minutes -= 90; //miego intervalas
+
+    if(minutes < 0) {
+      minutes += 60;
+      valandos--;
+      if(minutes < 0) {
+        minutes += 60;
+        valandos--;
+      }
+      //jei valandos neigiamos, perdaro i 24 valandu formata
+      if(valandos < 0) {
+        valandos += 24;
+      }
+
+      //perdaro 7:9 i 07:09
+      if(valandos<10){
+        valandos = '0'+valandos;
+      }
+      if(minutes<10){
+        minutes = '0'+minutes;
+      }
+      $('#rezultatas').prepend("<h1>"+valandos+":"+minutes+"</h1>");
+      $('h1:nth-child(3)').css('opacity', i/10+.2);
+      console.log(valandos+":"+minutes);
+    }
+  }
+
+  console.log('---');
 };

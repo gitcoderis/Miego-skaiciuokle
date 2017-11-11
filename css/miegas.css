@@ -27,7 +27,7 @@ body {
   100% {
     background-color: #0C154C; } }
 h1 {
-  font-family: "Baloo", cursive; }
+  font-family: "Berkshire Swash", cursive; }
 
 .title-dalis {
   font-family: "Berkshire Swash", cursive !important; }
@@ -40,7 +40,7 @@ h1 {
   z-index: 99; }
   .navbar-miego .navbar-brand {
     color: #fff;
-    font-family: "Baloo", cursive; }
+    font-family: "Berkshire Swash", cursive; }
     .navbar-miego .navbar-brand:hover {
       color: #fff; }
     .navbar-miego .navbar-brand:focus {
@@ -127,6 +127,9 @@ h1 {
     background-color: #008E99; }
   100% {
     background-color: #18A2C4; } }
+#rezultatas {
+  margin: 20px auto; }
+
 .zvaigzdutes-konteineris {
   position: absolute;
   height: 2px;

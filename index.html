@@ -26,9 +26,9 @@
       <li class="nav-item">
         <a class="nav-link" href="#">D.U.K. (pvz., kada geriausia eiti miegoti, jei mokiausi iki 1val. nakties)</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link d isabled" href="#">D isabled</a>
+      </li> -->
     </ul>
     <!-- <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -56,10 +56,10 @@
             <div class="form-inline justify-content-center">
               <div class="form-group mx-sm-3">
 
-                  <!-- <input type="time" class="form-control" min="0" id="inputTime" value="07:00" required> -->
-                  <input type="text" class="timepicker" name="" value="" id="inputas">
+                  <!-- <input type="time" class="form-control" min="0" id="inputTime" value="07:00" required>  onclick="arVeikiaDb();"-->
+                  <input type="text" class="timepicker" name="" value="">
 
-                                      <button type="button" name="button" class="btn btn-primary btn-lg" onclick="arVeikiaDb();">Skaičiuoti</button>
+                                      <button type="button" name="button" class="btn btn-primary btn-lg" id="btn-skaiciuoti">Skaičiuoti</button>
               </div>
 
             </div>
@@ -70,6 +70,9 @@
         </div>
       </div>
 
+      <div class="col-md-8 offset-md-2 text-center" id="rezultatas">
+
+      </div>
 
     </div>
   </div>
@@ -88,7 +91,7 @@
       crossorigin="anonymous"></script>
     <script src="./js/jquery.timepicker.js"></script>
 
-
+    <script src="./js/moment.js" charset="utf-8"></script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
