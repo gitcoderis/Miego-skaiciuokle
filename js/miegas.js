@@ -50,7 +50,8 @@ $('#btn-skaiciuoti').click(function(){
   } else {
     $('#rezultatas').empty();
     kadaMiegoti();
-    $('#rezultatas').prepend("<p>Kad atsikeltumėte pailsėję norimu laiku, miegoti reikėtų eiti vienu iš šių laikų:</p>");
+    $('#rezultatas').prepend("<p>Kad atsikeltumėte žvalesni norimu laiku, miegoti reikėtų eiti vienu iš šių laikų:</p>");
+    $('#rezultatas').append("<p style='margin-top:20px;'>Skaičiuoklė atsižvelgia į tai, jog atsigulus, užmigti trunka vidutiniškai 15 minučių.<br>Siekiant geriau jaustis atsibudus, reikėtų stengtis prabusti tarp miego ciklų, kurių kiekvienas trunka 90&nbsp;minučių. </p>");
 
     $('#btn-skaiciuoti').addClass('disabled');
   }
@@ -64,7 +65,7 @@ $('#btn-skaiciuoti').click(function(){
 
 var kadaMiegoti = function(){
 
-  var result;
+
   minutes-=15;
   for (var i = 0; i < 6; i++) {
     minutes -= 90; //miego intervalas
@@ -81,6 +82,15 @@ var kadaMiegoti = function(){
         valandos += 24;
       }
 
+
+      ////////skaciuoja, kiek valandu is viso bus miegota//////////////
+      // var visoMiego = 90*(i+1);
+      // var miegoVal = Math.floor(visoMiego/60);
+      // var miegoMin = visoMiego % 60;
+      //
+      // console.log(visoMiego, miegoVal+":"+miegoMin);
+      //////////////////////////////////////////////////////////////////
+
       //perdaro 7:9 i 07:09
       if(valandos<10){
         valandos = '0'+valandos;
@@ -88,7 +98,7 @@ var kadaMiegoti = function(){
       if(minutes<10){
         minutes = '0'+minutes;
       }
-      $('#rezultatas').prepend("<h1>"+valandos+":"+minutes+"</h1>");
+      $('#rezultatas').prepend("<h1><i class='material-icons'>schedule</i> "+valandos+":"+minutes+"</h1>");
       $('h1:nth-child(3)').css('opacity', i/10+.2);
       console.log(valandos+":"+minutes);
     }
