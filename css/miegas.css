@@ -199,5 +199,11 @@ h1 {
     top: 90%;
     right: 50%;
     opacity: 0; } }
+footer {
+  margin: 10px 20px 30px; }
+  footer a {
+    display: inline-block;
+    padding: 0px 15px;
+    color: #fff !important; }
 
 /*# sourceMappingURL=miegas.css.map */
