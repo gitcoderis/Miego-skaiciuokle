@@ -200,10 +200,10 @@ h1 {
     right: 50%;
     opacity: 0; } }
 footer {
-  margin: 10px 20px 30px; }
+  margin: 10px 0px 30px; }
   footer a {
     display: inline-block;
-    padding: 0px 15px;
+    padding: 0px 9px;
     color: #fff !important; }
 
 /*# sourceMappingURL=miegas.css.map */

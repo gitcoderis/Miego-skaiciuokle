@@ -35,6 +35,7 @@ $(document).ready(function(){
       valandos = time.getHours();
       minutes = time.getMinutes();
        $('#btn-skaiciuoti').removeClass('disabled');
+         $('#btn-skaiciuoti').html("Skaičiuoti");
       // if(result<0) {
       //   result = result+60;
       //   console.log(result);
@@ -49,11 +50,15 @@ $('#btn-skaiciuoti').click(function(){
     console.log('Mygtukas neaktyvus. Pasirinkite kitą laiką');
   } else {
     $('#rezultatas').empty();
+
     kadaMiegoti();
+
     $('#rezultatas').prepend("<p>Kad atsikeltumėte žvalesni norimu laiku, miegoti reikėtų eiti vienu iš šių laikų:</p>");
     $('#rezultatas').append("<p style='margin-top:20px;'>Skaičiuoklė atsižvelgia į tai, jog atsigulus, užmigti trunka vidutiniškai 15 minučių.<br>Siekiant geriau jaustis atsibudus, reikėtų stengtis prabusti tarp miego ciklų, kurių kiekvienas trunka 90&nbsp;minučių. </p>");
 
-    $('#btn-skaiciuoti').addClass('disabled');
+    $('#btn-skaiciuoti').addClass('disabled').html("Rinktis kitą laiką");
+    $(window).scrollTop(500);
+// $('#rezultatas').fadeIn( 100000 );
   }
 
 });
